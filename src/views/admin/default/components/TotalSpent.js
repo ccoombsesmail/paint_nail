@@ -15,10 +15,9 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
-import {
-  lineChartDataTotalSpent,
-  lineChartOptionsTotalSpent,
-} from "variables/charts";
+
+import { lineChartDataCosts, lineChartOptionsCosts} from "views/admin/dataTables/variables/chart";
+
 
 export default function TotalSpent(props) {
   const { ...rest } = props;
@@ -59,7 +58,7 @@ export default function TotalSpent(props) {
               color={textColorSecondary}
               me='4px'
             />
-            This month
+            Investor Repayment Plan
           </Button>
           <Button
             ms='auto'
@@ -86,7 +85,7 @@ export default function TotalSpent(props) {
             textAlign='start'
             fontWeight='700'
             lineHeight='100%'>
-            $37.5K
+            $40K
           </Text>
           <Flex align='center' mb='20px'>
             <Text
@@ -95,27 +94,39 @@ export default function TotalSpent(props) {
               fontWeight='500'
               mt='4px'
               me='12px'>
-              Total Spent
+              Initial Investment
+            </Text>
+          </Flex>
+
+          <Flex flexDirection='column' me='20px' mt='28px'>
+          <Text
+            color={textColor}
+            fontSize='34px'
+            textAlign='start'
+            fontWeight='700'
+            lineHeight='100%'>
+            $4K
+          </Text>
+          <Text
+              color='secondaryGray.600'
+              fontSize='sm'
+              fontWeight='500'
+              mt='4px'
+              me='12px'>
+              Total Interest Earned
             </Text>
             <Flex align='center'>
               <Icon as={RiArrowUpSFill} color='green.500' me='2px' mt='2px' />
               <Text color='green.500' fontSize='sm' fontWeight='700'>
-                +2.45%
+                +10% ROI
               </Text>
             </Flex>
           </Flex>
-
-          <Flex align='center'>
-            <Icon as={IoCheckmarkCircle} color='green.500' me='4px' />
-            <Text color='green.500' fontSize='md' fontWeight='700'>
-              On track
-            </Text>
-          </Flex>
         </Flex>
-        <Box minH='260px' minW='75%' mt='auto'>
+        <Box minH='360px' minW='75%' mt='auto'>
           <LineChart
-            chartData={lineChartDataTotalSpent}
-            chartOptions={lineChartOptionsTotalSpent}
+            chartData={lineChartDataCosts}
+            chartOptions={lineChartOptionsCosts}
           />
         </Box>
       </Flex>

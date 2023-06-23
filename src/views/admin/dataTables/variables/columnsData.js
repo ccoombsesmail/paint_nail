@@ -57,8 +57,8 @@ export const columnsDataColumns = [
 
 export const columnsDataComplex = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "Item",
+    accessor: "item",
   },
   {
     Header: "STATUS",

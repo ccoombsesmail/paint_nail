@@ -1,0 +1,13 @@
+[{
+  "item": "Sales",
+  "minEstimate": "$21,000", 
+  "maxEstimate": "$48,000",
+  "mean": "$33,000" 
+},
+{
+  "item": "Totals: ",
+  "minEstimate": "$21,000", 
+  "maxEstimate": "$48,000",
+  "mean": "$33,000" 
+}
+]

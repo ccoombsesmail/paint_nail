@@ -1,8 +1,6 @@
 import {
   Flex,
   Table,
-  Progress,
-  Icon,
   Tbody,
   Td,
   Text,
@@ -10,6 +8,7 @@ import {
   Thead,
   Tr,
   useColorModeValue,
+  Container
 } from "@chakra-ui/react";
 import React, { useMemo } from "react";
 import {
@@ -24,13 +23,13 @@ import Card from "components/card/Card";
 import Menu from "components/menu/MainMenu";
 
 // Assets
-import { MdCheckCircle, MdCancel, MdOutlineError } from "react-icons/md";
 export default function ColumnsTable(props) {
-  const { columnsData, tableData } = props;
+  const { columnsData, tableData, title } = props;
+  console.log(tableData)
 
   const columns = useMemo(() => columnsData, [columnsData]);
   const data = useMemo(() => tableData, [tableData]);
-
+  console.log(data)
   const tableInstance = useTable(
     {
       columns,
@@ -49,7 +48,7 @@ export default function ColumnsTable(props) {
     prepareRow,
     initialState,
   } = tableInstance;
-  initialState.pageSize = 5;
+  initialState.pageSize = 7;
 
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.100");
@@ -65,7 +64,7 @@ export default function ColumnsTable(props) {
           fontSize='22px'
           fontWeight='700'
           lineHeight='100%'>
-          Complex Table
+          {title}
         </Text>
         <Menu />
       </Flex>
@@ -95,65 +94,14 @@ export default function ColumnsTable(props) {
           {page.map((row, index) => {
             prepareRow(row);
             return (
-              <Tr {...row.getRowProps()} key={index}>
+              <Tr {...row.getRowProps()} key={index} style={{borderTop: '1px solid black !important'}}>
                 {row.cells.map((cell, index) => {
                   let data = "";
-                  if (cell.column.Header === "NAME") {
                     data = (
                       <Text color={textColor} fontSize='sm' fontWeight='700'>
                         {cell.value}
                       </Text>
                     );
-                  } else if (cell.column.Header === "STATUS") {
-                    data = (
-                      <Flex align='center'>
-                        <Icon
-                          w='24px'
-                          h='24px'
-                          me='5px'
-                          color={
-                            cell.value === "Approved"
-                              ? "green.500"
-                              : cell.value === "Disable"
-                              ? "red.500"
-                              : cell.value === "Error"
-                              ? "orange.500"
-                              : null
-                          }
-                          as={
-                            cell.value === "Approved"
-                              ? MdCheckCircle
-                              : cell.value === "Disable"
-                              ? MdCancel
-                              : cell.value === "Error"
-                              ? MdOutlineError
-                              : null
-                          }
-                        />
-                        <Text color={textColor} fontSize='sm' fontWeight='700'>
-                          {cell.value}
-                        </Text>
-                      </Flex>
-                    );
-                  } else if (cell.column.Header === "DATE") {
-                    data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
-                        {cell.value}
-                      </Text>
-                    );
-                  } else if (cell.column.Header === "PROGRESS") {
-                    data = (
-                      <Flex align='center'>
-                        <Progress
-                          variant='table'
-                          colorScheme='brandScheme'
-                          h='8px'
-                          w='108px'
-                          value={cell.value}
-                        />
-                      </Flex>
-                    );
-                  }
                   return (
                     <Td
                       {...cell.getCellProps()}

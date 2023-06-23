@@ -1,0 +1,31 @@
+[{
+  "item": "Franchise Fee",
+  "minEstimate": "$80000", 
+  "maxEstimate": "$80000",
+  "mean": "$80000" 
+},
+{
+  "item": "Contruction",
+  "minEstimate": "$25000", 
+  "maxEstimate": "$37000",
+  "mean": "$31000" 
+},
+{
+  "item": "Deposit",
+  "minEstimate": "$2750", 
+  "maxEstimate": "$5500",
+  "mean": "$4125" 
+},
+{
+  "item": "Rent Before Opening",
+  "minEstimate": "$0", 
+  "maxEstimate": "$5500",
+  "mean": "$2750" 
+},
+{
+  "item": "Totals:",
+  "minEstimate": "$105000", 
+  "maxEstimate": "$128000",
+  "mean": "$116500" 
+}
+]

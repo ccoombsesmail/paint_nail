@@ -1,4 +1,4 @@
-export const columnsDataCheck = [
+export const columnsDataUpFront= [
   {
     Header: "NAME",
     accessor: "name",
@@ -18,19 +18,19 @@ export const columnsDataCheck = [
 ];
 export const columnsDataComplex = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "Item",
+    accessor: "item",
   },
   {
-    Header: "STATUS",
-    accessor: "status",
+    Header: "Min Estimate",
+    accessor: "minEstimate",
   },
   {
-    Header: "DATE",
-    accessor: "date",
+    Header: "Max Estimate",
+    accessor: "maxEstimate",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "Mean",
+    accessor: "mean",
   },
 ];

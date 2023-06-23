@@ -1,26 +1,38 @@
 [
   {
-    "name":"Horizon UI PRO",
-    "status": "Approved",
-    "date": "18 Apr 2022",
-    "progress": 75.5  
+    "item":"Rent",
+    "minEstimate": "$2750",
+    "maxEstimate": "$3250",
+    "mean": "$3000"  
   },
   {
-    "name":"Horizon UI Free",
-    "status": "Disable",
-    "date": "18 Apr 2022",
-    "progress": 25.5  
+    "item":"Utilities",
+    "minEstimate": "$200",
+    "maxEstimate": "$500",
+    "mean": "$350"  
   },
   {
-    "name":"Marketplace",
-    "status": "Error",
-    "date": "20 May 2021",
-    "progress": 90  
+    "item":"Pay Roll (5 Employees)",
+    "minEstimate": "$15000",
+    "maxEstimate": "$18750",
+    "mean": "$16875"  
   },
   {
-    "name":"Weekly Updates",
-    "status": "Approved",
-    "date": "12 Jul 2021",
-    "progress": 50.5  
+    "item":"Mani/Pedi Materials",
+    "minEstimate": "$250",
+    "maxEstimate": "$300",
+    "mean": "$275"  
+  },
+  {
+    "item":"Eyelash Materials",
+    "minEstimate": "$175",
+    "maxEstimate": "$200",
+    "mean": "$187"  
+  },
+  {
+    "item":"Totals:",
+    "minEstimate": "$18375",
+    "maxEstimate": "$23000",
+    "mean": "$20687"  
   }
 ]
