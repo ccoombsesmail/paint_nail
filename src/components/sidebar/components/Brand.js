@@ -13,7 +13,7 @@ export function SidebarBrand() {
 
   return (
     <Flex align='center' direction='column'>
-      <HorizonLogo h='26px' w='175px' my='32px' color={logoColor} />
+      <img src="https://s3-media0.fl.yelpcdn.com/bphoto/lyZupxAEuHQqIL1sqCtekg/o.jpg" width={150} style={{marginBottom: '30px'}}/>
       <HSeparator mb='20px' />
     </Flex>
   );
