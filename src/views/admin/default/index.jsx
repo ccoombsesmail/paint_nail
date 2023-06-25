@@ -182,7 +182,7 @@ export default function UserReports() {
           />
         </div>
         <div>
-          <Text mb='8px'>Level One Membershio Ratio: {levelOneRatio}</Text>
+          <Text mb='8px'>Level One Membership Ratio: {levelOneRatio}</Text>
           <Input
 
             variant='filled'
@@ -195,7 +195,7 @@ export default function UserReports() {
           />
         </div>
         <div>
-          <Text mb='8px'>Level Two Membershio Ratio: {levelTwoRatio}</Text>
+          <Text mb='8px'>Level Two Membership Ratio: {levelTwoRatio}</Text>
           <Input
 
             variant='filled'
