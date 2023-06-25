@@ -23,9 +23,15 @@
   "mean": "$2750" 
 },
 {
+  "item": "Initial Supplies",
+  "minEstimate": "$1050", 
+  "maxEstimate": "$1050",
+  "mean": "$1050" 
+},
+{
   "item": "Totals:",
-  "minEstimate": "$105000", 
-  "maxEstimate": "$128000",
-  "mean": "$116500" 
+  "minEstimate": "$106050", 
+  "maxEstimate": "$129050",
+  "mean": "$117550" 
 }
 ]

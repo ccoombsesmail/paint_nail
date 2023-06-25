@@ -14,25 +14,37 @@
   {
     "item":"Pay Roll (5 Employees)",
     "minEstimate": "$15000",
-    "maxEstimate": "$18750",
+    "maxEstimate": "$20000",
     "mean": "$16875"  
   },
   {
     "item":"Mani/Pedi Materials",
-    "minEstimate": "$250",
-    "maxEstimate": "$300",
-    "mean": "$275"  
+    "minEstimate": "$50",
+    "maxEstimate": "$70",
+    "mean": "$60"  
   },
   {
     "item":"Eyelash Materials",
-    "minEstimate": "$175",
-    "maxEstimate": "$200",
+    "minEstimate": "$50",
+    "maxEstimate": "$80",
     "mean": "$187"  
   },
   {
+    "item":"Insurance",
+    "minEstimate": "$170",
+    "maxEstimate": "$170",
+    "mean": "$170"  
+  },
+  {
+    "item":"Business License",
+    "minEstimate": "$20",
+    "maxEstimate": "$20",
+    "mean": "$20"  
+  },
+  {
     "item":"Totals:",
-    "minEstimate": "$18375",
-    "maxEstimate": "$23000",
-    "mean": "$20687"  
+    "minEstimate": "$18240",
+    "maxEstimate": "$24090",
+    "mean": "$21165"  
   }
 ]
