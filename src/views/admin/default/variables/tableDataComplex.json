@@ -15,7 +15,7 @@
     "item":"Pay Roll (5 Employees)",
     "minEstimate": "$15000",
     "maxEstimate": "$20000",
-    "mean": "$16875"  
+    "mean": "$17500"  
   },
   {
     "item":"Mani/Pedi Materials",
@@ -27,7 +27,7 @@
     "item":"Eyelash Materials",
     "minEstimate": "$50",
     "maxEstimate": "$80",
-    "mean": "$187"  
+    "mean": "$65"  
   },
   {
     "item":"Insurance",
